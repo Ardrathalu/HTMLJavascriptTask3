@@ -1,0 +1,27 @@
+<head>
+<body onload="onloadfun()"/>
+<script type="text/javascript">
+function checkfun()
+{
+alert("button pressed");
+}
+function onloadfun()
+{
+alert("Page is loaded");
+}
+function focusin(x)
+{
+x.style.background= "yellow";
+}
+</script>
+</head>
+<body>
+<form name="Appform"  ><br>
+<br>First Name		:<input type="text" name="fname"  /></br>
+<br>Last Name		:<input type="text" name="lname" /></br>
+<br>Address Line1   	:<input type="text" name="add1name" onfocus="focusin(this)" /></br>
+<br>AddressLine2    	:<input type="text" name="add2name"  /></br>
+<input type="submit" name="vald" value="Validate" onclick="checkfun()"/>
+</form>
+</body>
+</html>
